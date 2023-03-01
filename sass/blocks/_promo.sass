@@ -1,0 +1,55 @@
+.promo
+    position: relative
+    height: 100vh
+    background: url(../../assets/img/bg-min.png) no-repeat right/cover
+    background-position: 75% 25%
+    padding: 200px 0 362px 0
+
+    &__title
+        margin-top: 9px
+        font-size: 48px
+        max-width: 590px
+        font-weight: 700
+        line-height: 60px
+    &__subtitle
+        text-align: left
+
+    &__btns
+        display: flex
+        align-items: center
+        margin-top: 25px
+
+    &__btn
+        @include btn
+
+    &__link
+        position: relative
+        margin-left: 44px
+        font-size: 14px
+        font-weight: 700
+        color: $main_color
+        text-transform: uppercase
+        cursor: pointer
+        
+        &::after
+            position: absolute
+            bottom: 0
+            left: 0
+            content: ''
+            width: 0
+            background-color: $main_color
+            height: 1.5px
+            transition: .5s all
+
+        &:hover
+            &::after
+                width: 100%
+        
+            
+
+
+
+ 
+
+    
+ 

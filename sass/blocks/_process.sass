@@ -1,0 +1,85 @@
+.process
+    min-height: 500px
+    padding: 60px 0
+    &__subtitle 
+        text-align: center
+        &::before
+            top: -25%
+            left: 50%
+            transform: translateX(-37%)
+
+    &__title
+        text-align: center
+    &__divider
+        margin: 0 auto
+        margin-top: 25px
+
+    &__wrapper
+        padding: 60px 80px 0 72px
+        width: 100%
+        display: grid
+        grid-template-columns: repeat(2, minmax(250px, 1fr))
+        grid-template-rows: minmax(386px, auto) 
+        grid-auto-rows: minmax(386px, auto)
+        column-gap: 143px
+        row-gap: 20px
+
+  
+    
+    &__column-title
+        padding-left: 43px
+        position: relative
+        font-size: 20px
+        font-weight: 700
+        @include circle
+        &::before
+            width: 15px
+            height: 15px
+            top: 50%
+            transform: translateY(-50%)
+            left: -7px
+
+    &__item
+        position: relative
+        &::after
+            position: absolute
+            top: 63px
+            left: 0
+            content: ''
+            width: 40px
+            height: 2px
+            background: #000
+        &::before
+            position: absolute
+            top: -8px
+            left: 0
+            content: ''
+            width: 1.5px
+            height: 100%
+            background: #000
+
+        &-head
+            position: relative
+            padding: 45px 0 0 100px
+        
+        &-title
+            font-size: 14px
+            font-weight: 700
+        &-subtitle
+            font-size: 14px
+        &-text
+            margin-top: 12px
+            font-size: 14px
+        &-icon
+            position: absolute
+            top: 46px
+            left: 40px
+            @include circle
+            i
+                position: absolute
+                top: 5px
+                left: 15px
+                font-size: 25px
+
+        &-text
+            padding-left: 43px

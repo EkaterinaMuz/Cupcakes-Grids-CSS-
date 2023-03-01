@@ -1,0 +1,34 @@
+.skill
+
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
+        gap: 45px
+
+    &__indicator
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        grid-auto-rows: 1fr
+        row-gap: 20px
+
+    &__subtitle
+        text-align: left
+        padding-left: 14px
+
+    &__percentage
+        justify-self: end
+
+    &__line
+        grid-column: 1/3
+        width: 100%
+        height: 14px
+        background: #E8E4DE
+        border-radius: 4px
+        span
+            display: block
+            background: $second_color
+            grid-column: 1/3
+            height: 14px
+            border-radius: 4px
+            transition: .5s all
