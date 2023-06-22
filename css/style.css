@@ -1141,6 +1141,7 @@ ul {
   }
   .works {
     padding-top: 0;
+    margin-top: 40px;
   }
   .works__wrapper {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1191,6 +1192,9 @@ ul {
     width: 250px;
     padding-left: 20px;
   }
+  .menu__item {
+    font-size: 20px;
+  }
   .about__divider {
     margin-top: 12px;
   }
@@ -1239,7 +1243,7 @@ ul {
   }
   .form__btn {
     text-transform: none;
-    font-size: 14px;
+    font-size: 12px;
   }
   .form__policy {
     line-height: 10px;
