@@ -6,9 +6,9 @@
     padding: 200px 0 362px 0
 
     &__title
+        max-width: 590px
         margin-top: 9px
         font-size: 48px
-        max-width: 590px
         font-weight: 700
         line-height: 60px
     &__subtitle
@@ -20,7 +20,7 @@
         margin-top: 25px
 
     &__btn
-        @include btn
+        @include button
 
     &__link
         position: relative
@@ -30,26 +30,17 @@
         color: $main_color
         text-transform: uppercase
         cursor: pointer
-        
+
         &::after
             position: absolute
             bottom: 0
             left: 0
-            content: ''
             width: 0
-            background-color: $main_color
             height: 1.5px
+            content: ''
+            background-color: $main_color
             transition: .5s all
 
         &:hover
             &::after
                 width: 100%
-        
-            
-
-
-
- 
-
-    
- 

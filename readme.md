@@ -1,6 +1,7 @@
-# HTML & CSS project
+# HTML & SASS project
 ## https://ekaterinamuz.github.io/Cupcakes-Grids-CSS-/
-* CSS Grid
+* Grids
+* HTML
 * SASS
 * Adaptive
 * Midjourney photos
